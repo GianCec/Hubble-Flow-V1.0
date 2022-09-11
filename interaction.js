@@ -168,9 +168,9 @@ if(bEMB.State){
       scale=scaleMin/a(t)
      }
 
-     if(scale<scaleMin && bTool[6].State){
+    /* if(scale<scaleMin && bTool[6].State){
       scale=scaleMin;
-     }
+     }*/
        }
 
 

@@ -7,8 +7,8 @@ var tableFLC;
 var tableSCF;
 let em=[];
 let maxNum=4;
-let scaleMax=16;
-let scaleMin=3;
+let scaleMax;
+let scaleMin;
 let cx,cy;
 let emR=20;
 
@@ -72,8 +72,11 @@ function draw() {
 
 function initialization(){
 frame=960;
-scale=12;
+scale=24;
 scaleI=scale;
+scaleMax=scale*2;
+scaleMin=scale/3;
+
 
 
 step=10;

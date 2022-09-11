@@ -258,7 +258,7 @@ while(ph<d && T<frame){
        emb.vertex(x,-y,z);
     }
     
-      ph=tableFLC.getNum(int(counter),0)/a(T);
+      ph=(tableFLC.getNum(int(T),0)-tableFLC.getNum(int(tEM),0))/PHfactor;
       counter++;
     }
 

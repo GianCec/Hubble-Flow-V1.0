@@ -1,3 +1,6 @@
+let PHfactor=1;
+
+
 function   features(){
   push();
   translate(cx,cy);
@@ -141,11 +144,12 @@ function photon(xi,yi,xf,yf){
   push();
   let tPH=t-tEM;
   translate(xi,yi);
-  let a=atan2(yf-yi,xf-xi);
-  rotate(a)
+  let b=atan2(yf-yi,xf-xi);
+  rotate(b)
   let m=0;
   if(tPH>0){
-   m=tableFLC.getNum(int(tPH),0)*scale;
+   // m=(tableFLC.getNum(int(tPH),0))*scale/PHfactor;
+   m=(tableFLC.getNum(int(t),0)-tableFLC.getNum(int(tEM),0))*a(t)*scale/PHfactor;
   }
   let Var=50;
   let start=m-Var/4;
@@ -157,7 +161,7 @@ function photon(xi,yi,xf,yf){
   stroke(255,255,0)
   strokeWeight(2);
   for(let i=start;i<end;i=i+jump){
-    let j=1000*cos(i/2)*gaussian(i,m,Var)
+    let j=1000*cos((i/5)/a(t))*gaussian(i,m,Var);
     if(i<d && i>emR/2 && tPH>0){
     vertex(i,-j);    
     }

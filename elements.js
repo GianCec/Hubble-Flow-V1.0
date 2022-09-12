@@ -123,7 +123,7 @@ function EH(){
 function LC(){
   let tPH=t-tEM;
 
-  let r=(tableFLC.getNum(int(t),0)-tableFLC.getNum(int(tEM),0))*scale;
+  let r=(tableFLC.getNum(int(t),0)-tableFLC.getNum(int(tEM),0))*a(t)*scale;
   push();
   strokeWeight(2);
   noFill();

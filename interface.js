@@ -46,7 +46,7 @@ buttonText(imgTxt[0],bReset,"Reset emitters");
 
 let bxTool=width*0.03;
 let toolInfo=["Hubble radius","Lightcone generated at photons emission",
-"Event Horizon","Show coordiantes","Show galaxies distances","Comoving coordinates","Proper coordiantes"]
+"Event Horizon","Show coordiantes","Show galaxies distances","Coordinates 1","Coordiantes 2"]
 
 let col = [ 
 
@@ -58,7 +58,7 @@ color(0x2A, 0x91, 0x34) ,
   color(0x41, 0xEA, 0xD4),
    ];
 
-   let info=[false,false,false,true,false,true,false];
+   let info=[false,false,false,true,false,false,true];
 
 for (let i = 0; i < toolInfo.length; i++) {
     let s=2;

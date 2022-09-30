@@ -178,3 +178,15 @@ function resetEm(){
   em.splice(0,maxNum);
 
 }
+
+function keyPressed() {
+  if (keyCode === RIGHT_ARROW) {
+      if(t<frame){
+    t++;
+  }
+  } else if (keyCode === LEFT_ARROW) {
+      if(t>0){
+          t--;
+        }
+  }
+}
